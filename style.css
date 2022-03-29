@@ -26,8 +26,10 @@ body{
     }
 
     .imageBlock img{
+        width: 50%;
         margin: 1%;
         padding: 1%;
+        min-width: 250px;
     }
     
     .block{
@@ -44,7 +46,6 @@ body{
         padding: 2%;
         margin: 1%;
         border-bottom: 1px solid black;
-
     }
 
     .block input:focus {
@@ -84,9 +85,13 @@ body{
         .imageBlock img{
             margin: 1%;
             padding: 1%;
-            max-width: 200px; ;
-            /* overflow:auto; */
+            width: 50%;
+            min-width: 200px;
         }
-
+        .block-buttons button::after{
+            background-color: white;
+            transform: scale(1.1, 1.1);
+            color:black;
+        }   
       }
     
